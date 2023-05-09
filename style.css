@@ -1,0 +1,13 @@
+html{ 
+    scroll-behavior: smooth;
+}
+
+/* VARIAVEIS */ 
+:root {
+  --verde-titulo: #4e561c;
+  --verde: #4f6745;
+  --rosa-hover: #b195a9;
+  --tamanho-fonte: 16px;
+  --fonte-principal: "Kanit";
+	--swiper-theme-color: #323232;
+}
