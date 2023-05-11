@@ -2,12 +2,138 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    margin: 0;
+}
+
 /* VARIAVEIS */ 
 :root {
   --verde-titulo: #4e561c;
   --verde: #4f6745;
   --rosa-hover: #b195a9;
-  --tamanho-fonte: 16px;
+  --tamanho-fonte: 18px;
   --fonte-principal: "Kanit";
 	--swiper-theme-color: #323232;
+}
+
+.btn-wpp{
+	position: fixed;
+	left: 92%;
+	bottom: 5%;
+	padding: 18px;
+	background-color: rgb(17, 212, 17);
+	border-radius: 50%;
+	z-index: 1000000;
+}
+
+.btn-wpp i{
+	color: white;
+	font-size: 40px;
+}
+
+.btn-wpp:hover{
+	background-color: rgb(13, 170, 13);
+	transition: .3s;
+}
+
+/*MENU DO SITE*/
+
+.banner{
+    height: 65.8vh;
+    width: 100%;
+	background: url(img/banner.png) center / contain no-repeat;
+}
+
+.menu{
+    display: flex;
+	justify-content: space-between;
+	padding: 0vh 8vw;
+}
+
+.logo{
+    padding: 8vh 5vw;
+    height: 162px;
+	width: 192px;
+}
+
+.menu-op{
+	display: flex;
+	list-style: none;
+}
+
+.menu-op-items{
+	padding-left: 3em;
+}
+
+.menu-op-items a{
+	font-family: var(--fonte-principal);
+    font-size: var(--tamanho-fonte);
+	color: white;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.menu-op-items a:hover{
+    border-bottom: 3px solid #b195a9;
+	transition: border-bottom-color 0.2s ease-in-out;
+}
+
+
+.banner-textos{
+    width: 35%;
+	padding-left: 14vw;
+    margin-top: -11vh;
+	font-family: var(--fonte-principal);
+	color: white;
+}
+
+.banner-textos h1{
+    font-weight: 200;
+	font-size: 2.2vw;
+    line-height: 1.1;
+    margin-bottom: 6.5vh;
+}
+
+.banner-textos a{
+    
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.6em 4vw;
+    border-radius: 10px;
+}
+
+.banner-textos a:hover{
+    background-color: #b195a9;
+    transition: 0.4s ease-in-out;
+}
+
+/*SOBRE*/
+
+.sobre{
+    padding: 4vh;
+    display: grid;
+    justify-content: center;
+}
+
+.sobre h1{
+    color: #4e561c;
+    font-family: var(--fonte-principal);
+    font-size: 3.9vh;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+.sobre h4{
+    font-family: var(--fonte-principal);
+    margin: 0;
+    font-weight: 200;
+    text-align: center;
+    font-size: 2vh;
+    font-size: 2vh;
+    line-height: 1.2;
 }
