@@ -41,7 +41,7 @@ body{
 .banner{
     height: 65.8vh;
     width: 100%;
-	background: url(img/banner.png) center / contain no-repeat;
+	background: url(img/banner.png) center top / cover no-repeat;
 }
 
 .menu{
@@ -83,7 +83,7 @@ body{
 .banner-textos{
     width: 35%;
 	padding-left: 14vw;
-    margin-top: -11vh;
+    margin-top: -8vh;
 	font-family: 'Raleway', sans-serif;
 	color: white;
 }
@@ -108,15 +108,24 @@ body{
 
 .banner-textos a:hover{
     background-color: #b195a9;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 /*SOBRE*/
 
 .sobre{
-    padding: 4vh;
-    display: grid;
-    justify-content: center;
+    padding: 8vh;
+    
+}
+
+.sobre_main{
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre_text{
+    width: 45%;
 }
 
 .sobre h1{
@@ -133,9 +142,13 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
     font-weight: 500;
-    text-align: center;
     font-size: 2vh;
     line-height: 1.2;
+}
+
+.sobre img{
+    width: 45%;
+    height: 100%;
 }
 
 /*SERVICOS*/
@@ -143,7 +156,7 @@ body{
 .servicos{
     height: 60vh;
 	align-items: center;
-    background: url(img/serv.png) center / contain no-repeat;
+    background: url(img/serv.png) center top / cover no-repeat;
 }
 
 .servicos h1{
@@ -205,5 +218,98 @@ body{
 
 /*CONTATO*/
 
+.contato{
+    display: flex;
+    justify-content: space-evenly;
+	padding: 8vh 4vw;
+	background: url(img/contato.png) #4f6745 center top /  cover no-repeat;
+}
 
+.contato-formulario, .contato-informacoes{
+	background-color: #ffffff;
+	width: 30vw;
+	padding: 1vh 2.5vw;
+	box-shadow: #b7b7b785 5px 5px 20px;
+}
+
+.contato-formulario h3, .contato-informacoes h3{
+    text-align: center;
+    color: #4f6745;
+	font-family: var(--fonte-principal);
+	font-size: 1.8vw;
+	font-weight: 700;
+	padding-bottom: 2vh;
+	
+}
+
+.contato-informacoes h3{
+	border-bottom: 0.3vw #4f6745 solid;
+}
+
+.contato-formulario-campos{
+	display: flex;
+	flex-direction: column;
+}
+
+.contato-formulario-campos-input{
+	padding: 1.5vh;
+	margin-bottom: 3vh;
+	border-radius: 0.3vw;
+	border: none;
+	background-color: #ebebeb;
+	
+}
+
+.contato-formulario-campos-input::placeholder{
+	color: #BBBBBB;
+	font-family: var(--fonte-principal);
+	outline-color: lightgray;
+}
+
+.contato-formulario-campos-input:focus{
+	color: black;
+	font-family: var(--fonte-principal);
+		outline-color: lightgray;			
+}
+	
+.contato-formulario-campos-input:not(:focus) {
+	color: black;
+	font-family: var(--fonte-principal);
+	outline-color: lightgray;
+}
+
+.contato-formulario-campos-botao{
+	background-color: black;
+	color: white;
+	padding: 1.5vh;
+	border-radius: 0.5vw;
+	border: none;
+	font-family: var(--fonte-principal);
+	font-size: 0.9vw;
+	margin-top: 4.0vh;
+}
+
+.contato-formulario-campos-botao:hover{
+	background-color: var(--rosa-hover);
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.contato-informacoes-lista{
+	margin-top: 1vh;
+}
+
+.contato-informacoes-lista li{
+	display: flex;
+	align-items: center;
+	padding: 0.5vh 0vw;
+}
+
+
+li p {
+	font-family: var(--fonte-principal);
+	font-size: 1vw;
+	padding: 1vh 1vh;
+	font-weight: 500;
+}
 
