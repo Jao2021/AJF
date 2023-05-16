@@ -333,6 +333,7 @@ footer{
     height: 34vh;
     
 	padding: 5.5vh 6vw;
+    padding-bottom: 0vh;
     background-color: #232323;
     display: grid;
     justify-content: center;
