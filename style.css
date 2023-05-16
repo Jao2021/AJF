@@ -51,9 +51,9 @@ body{
 }
 
 .logo{
-    padding: 6vh 5vw;
-    height: 162px;
-	width: 192px;
+    padding: 6vh 6vw;
+    height: 100px;
+	width: 130px;
 }
 
 .menu-op{
@@ -83,7 +83,7 @@ body{
 .banner-textos{
     width: 35%;
 	padding-left: 14vw;
-    margin-top: -8vh;
+    margin-top: -6vh;
 	font-family: 'Raleway', sans-serif;
 	color: white;
 }
@@ -97,7 +97,7 @@ body{
 
 .banner-textos a{
     
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: white;
@@ -148,7 +148,7 @@ body{
 
 .sobre img{
     width: 45%;
-    height: 100%;
+    height: 85vh;
 }
 
 /*SERVICOS*/
@@ -261,7 +261,7 @@ body{
 }
 
 .contato-formulario-campos-input::placeholder{
-	color: #BBBBBB;
+	color: #929090;
 	font-family: var(--fonte-principal);
 	outline-color: lightgray;
 }
@@ -297,6 +297,7 @@ body{
 
 .contato-informacoes-lista{
 	margin-top: 1vh;
+    padding: 0.5vw;
 }
 
 .contato-informacoes-lista li{
@@ -305,11 +306,69 @@ body{
 	padding: 0.5vh 0vw;
 }
 
+.contato-informacoes-lista li:before{
+    display: inline-block;
+    background-color: var(--verde);
+    content: "";
+    border-radius: 50%;
+    padding: 1vh;
+}
 
-li p {
+.contato-informacoes-lista li p {
 	font-family: var(--fonte-principal);
 	font-size: 1vw;
 	padding: 1vh 1vh;
 	font-weight: 500;
 }
 
+
+/*LOCAL*/
+.local iframe{
+	width: 100%;
+}
+
+/*FOOTER*/
+
+footer{
+    height: 34vh;
+    
+	padding: 5.5vh 6vw;
+    background-color: #232323;
+    display: grid;
+    justify-content: center;
+}
+
+footer .logo{
+    padding: 0vh 4.6vw;
+    height: 140px;
+	width: 190px;
+}
+
+.menu-rodape{
+	display: flex;
+    padding-bottom: 5vh;
+}
+
+.menu-rodape-abas{
+	display: flex;
+	
+}
+
+.rodape-items{
+	padding-left: 1.3vw;
+    list-style: none;
+}
+
+.rodape-items a{
+	font-weight: 300;
+	font-family: var(--fonte-principal);
+	color: white;
+    font-size: 18px;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.rodape-items a:hover{
+	border-bottom: 2px var(--rosa-hover) solid;
+}
