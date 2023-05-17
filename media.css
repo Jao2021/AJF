@@ -1,0 +1,177 @@
+@media screen and (max-width: 450px) {
+
+.btn-wpp{
+	position: fixed;
+	left: 60%;
+	bottom: 25%;
+	
+}
+
+    
+ .banner{
+    background: center top / cover no-repeat #4f6745;
+    padding: 3vh 5vw;
+    
+}
+
+.menu-op-items{
+	padding-left: 1em;
+}
+
+.menu-op-items a{
+	font-size: 16px;
+}
+
+.banner-textos h1{
+    font-weight: 600;
+	font-size: 5.5vw;
+            
+}
+.banner-textos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30vh;
+    gap: 2vh;
+}
+
+.banner-textos a{
+    font-size: 5vw;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 2vh 5vw;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+}
+    
+    /*SERVICOS*/
+
+.servicos{
+    padding: 5vh 5vw;
+    
+}
+
+.serv_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vw;;
+    padding: 5vh 0vw;;
+}
+
+.serv_card{
+    background-color: white;
+    padding: 6vh 3vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+    .serv_card img {
+        margin: auto;
+        width: 50%;
+    }
+    
+    .serv_card h4{
+    font-size: 30px;
+    
+}
+    
+    .servicos h1{
+    font-size: 5vh;
+          
+}
+    
+    /*SOBRE*/
+
+.sobre{
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sobre_text{
+    width: 100%;
+    padding-bottom: 5vh;
+}
+
+
+.sobre_text h1{
+    font-size: 15vw;
+    
+}
+
+.sobre_text p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vh;
+    line-height: 1.1;
+}
+
+.sobre img{
+    width: 100%;
+    height: auto;
+    box-shadow: 5px -2px 15px rgba(0, 0, 0, 0.4);
+}
+    
+    /*CONTATO*/
+
+.contato{
+    flex-direction: column;
+    gap: 3vh;
+	padding: 5vh 5vw;
+	
+}
+    
+    .contato-formulario, .contato-informacoes{
+	width: 85vw;
+	padding: 5vh 3vw;
+	
+}
+    
+    .contato-formulario h3, .contato-informacoes h3{
+    font-size: 3.2vh;
+}
+    
+    .contato-formulario-campos-input{
+	padding: 2vh;
+	margin-bottom: 1vh;
+	font-size: 1.8vh;
+	
+}
+
+.contato-formulario-campos-botao{
+	font-size: 2vh;
+}
+    
+
+.contato-informacoes-lista li p {
+	font-size: 1.8vh;
+	
+}
+
+    /*LOCAL*/
+.local iframe{
+	width: 100%;
+}
+
+/*FOOTER*/
+
+
+.rodape_img{
+    width: 30%;
+}
+
+
+
+.rodape-items a{
+	font-size: 22px;
+	
+}
+
+
+    
+}

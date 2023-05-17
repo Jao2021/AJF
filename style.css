@@ -39,21 +39,20 @@ body{
 /*MENU DO SITE*/
 
 .banner{
-    height: 65.8vh;
-    width: 100%;
-	background: url(img/banner.png) center top / cover no-repeat;
+    background: url(img/banner.webp) center top / cover no-repeat #4f6745;
+    padding: 5vh 10vw;
+    height: 70vh;
 }
 
 .menu{
     display: flex;
 	justify-content: space-between;
-	padding: 2vh 8vw;
+	padding: 2vh 0vw;
 }
 
 .logo{
-    padding: 6vh 6vw;
-    height: 100px;
-	width: 130px;
+    width: 14%;
+	
 }
 
 .menu-op{
@@ -80,30 +79,33 @@ body{
 }
 
 
-.banner-textos{
-    width: 35%;
-	padding-left: 14vw;
-    margin-top: -6vh;
-	font-family: 'Raleway', sans-serif;
-	color: white;
-}
-
 .banner-textos h1{
-    font-weight: 500;
-	font-size: 1.8vw;
-    line-height: 1.1;
-    margin-bottom: 6.5vh;
+    font-family: 'Raleway', sans-serif;
+	color: white;
+    font-weight: 700;
+	font-size: 2vw;
+    line-height: 1.3;
+    
+        
+}
+.banner-textos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 5vh;
+    gap: 5vh;
 }
 
 .banner-textos a{
-    
     font-size: 1.1vw;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 0.6em 4vw;
+    padding: 2vh 5vw;
     border-radius: 10px;
+    width: 30%;
+    text-align: center;
 }
 
 .banner-textos a:hover{
@@ -114,72 +116,67 @@ body{
 /*SOBRE*/
 
 .sobre{
-    padding: 8vh;
-    
-}
-
-.sobre_main{
-    padding-top: 4vh;
+    padding: 10vh 10vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sobre_text{
     width: 45%;
 }
 
-.sobre h1{
-    color: #4e561c;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3.9vh;
-    font-weight: 600;
-    text-align: center;
+
+.sobre_text h1{
+    color: #4f6746;
+    font-family: 'Raleway';
+    font-size: 10vh;
+    font-weight: 900;
+    text-align: start;
     margin: 0;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
-.sobre h4{
+.sobre_text p{
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    font-weight: 500;
     font-size: 2vh;
     line-height: 1.2;
 }
 
 .sobre img{
     width: 45%;
-    height: 85vh;
+    height: 90vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 /*SERVICOS*/
 
 .servicos{
-    height: 60vh;
-	align-items: center;
-    background: url(img/serv.png) center top / cover no-repeat;
+    padding: 8vh 0vw;
+    align-items: center;
+    background: url(img/serv.webp) center top / cover no-repeat #4f6746;
 }
 
 .servicos h1{
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 3.9vh;
+    font-size: 4vh;
     font-weight: 600;
     text-align: center;
-    padding-top: 5vh;
-    margin: 0;
-    margin-bottom: 1vh;
+      
 }
-
 
 .serv_row{
     display: flex;
-    justify-content: space-evenly;
-    padding: 8vh;
+    justify-content: center;
+    gap: 3vw;;
+    padding: 8vh 0vw;;
 }
 
 .serv_card{
     background-color: white;
-    padding: 0px 40px;
+    padding: 6vh 3vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -188,13 +185,10 @@ body{
     cursor: pointer;
     transform: translateY(-4%);
     transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.serv_card img{
-    padding-top: 30px;
-    height: auto;
-    width: auto;
-}
+
 
 .serv_card h4:before{
     background-color: var(--verde-titulo);
@@ -220,16 +214,16 @@ body{
 
 .contato{
     display: flex;
-    justify-content: space-evenly;
-	padding: 8vh 4vw;
-	background: url(img/contato.png) #4f6745 center top /  cover no-repeat;
+    justify-content: space-between;
+	padding: 8vh 10vw;
+	background: url(img/contato.webp) #4f6745 center top /  cover no-repeat;
 }
 
 .contato-formulario, .contato-informacoes{
 	background-color: #ffffff;
 	width: 30vw;
-	padding: 1vh 2.5vw;
-	box-shadow: #b7b7b785 5px 5px 20px;
+	padding: 5vh 2.5vw;
+	box-shadow: #00000085 5px 5px 20px;
 }
 
 .contato-formulario h3, .contato-informacoes h3{
@@ -269,7 +263,7 @@ body{
 .contato-formulario-campos-input:focus{
 	color: black;
 	font-family: var(--fonte-principal);
-		outline-color: lightgray;			
+    outline-color: lightgray;			
 }
 	
 .contato-formulario-campos-input:not(:focus) {
@@ -285,13 +279,13 @@ body{
 	border-radius: 0.5vw;
 	border: none;
 	font-family: var(--fonte-principal);
-	font-size: 0.9vw;
-	margin-top: 4.0vh;
+	font-size: 1.1vw;
+	
 }
 
 .contato-formulario-campos-botao:hover{
 	background-color: var(--rosa-hover);
-	transition: 0.2s ease-in-out;
+	transition: 0.1s ease-in-out;
 	cursor: pointer;
 }
 
@@ -329,36 +323,29 @@ body{
 
 /*FOOTER*/
 
-footer{
-    height: 34vh;
-    
-	padding: 5.5vh 6vw;
-    padding-bottom: 0vh;
+.rodape{
+    padding: 4vh 6vw;
     background-color: #232323;
-    display: grid;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
 }
 
-footer .logo{
-    padding: 0vh 4.6vw;
-    height: 140px;
-	width: 190px;
+
+
+.rodape_img{
+    width: 10%;
 }
 
-.menu-rodape{
-	display: flex;
-    padding-bottom: 5vh;
-}
 
 .menu-rodape-abas{
 	display: flex;
-	
+	gap: 2vw;
 }
 
-.rodape-items{
-	padding-left: 1.3vw;
-    list-style: none;
-}
+
 
 .rodape-items a{
 	font-weight: 300;
