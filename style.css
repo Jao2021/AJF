@@ -108,6 +108,7 @@ body{
     text-align: center;
 }
 
+
 .banner-textos a:hover{
     background-color: #b195a9;
     transition: 0.2s ease-in-out;
@@ -200,15 +201,76 @@ body{
     width: 100%;
 }
 
+
+
 .serv_card h4{
     padding-top: 2vh;
     text-align: center;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     color: black;
-
 }
 
+.radio{
+    display: none;
+}
+
+
+.card-main-enge{
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.card-main-ins{
+    display: none;
+    transition: 0.3s ease-in-out;  
+}
+
+.card-main-man{
+    display: none;
+    transition: 0.3s ease-in-out;  
+}
+
+
+
+#card-enge:checked ~ .card-main-enge{
+    display: block;
+    padding: 4vh;
+}
+
+#card-ins:checked ~ .card-main-ins{
+    display: block;
+    padding: 4vh;
+}
+
+#card-man:checked ~ .card-main-man{
+    display: block;
+    padding: 4vh;
+}
+
+
+card_row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vh;
+}
+
+
+.fecha-enge div{
+    width: 27px;
+	height: 2px;
+	background-color: black;
+	margin: 7px;
+}
+
+
+.fecha-enge .line1{
+	transform: rotate(-45deg) translate(-2px, 6px);
+}
+
+.fecha-enge .line2{
+	transform: rotate(45deg) translate(-1px, -5px);
+}
 
 /*CONTATO*/
 
