@@ -1,17 +1,17 @@
-class CardEngenharia {
-    constructor(cardEnge, cardList, cardLinks) {
-    this.cardEnge = document .querySelector (cardEnge) ;
-    this.cardList = document.querySelector(cardList) ;
-    this.cardLinks = document.querySelectorAll(cardLinks);
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+    this.mobileMenu = document .querySelector (mobileMenu) ;
+    this.navList = document.querySelector(navList) ;
+    this.navLinks = document.querySelectorAll(navLinks);
     this.activeClass = "active";
     this.handleClick = this.handleClick.bind(this);
     }
 
     animateLinks() {
-        this.cardLinks.forEach((link, index) => {
+        this.navLinks.forEach((link, index) => {
         link.style.animation
             ? (link.style.animation = "")
-            : (link.style.animation = `cardLinkFade 0.3s ease forwards ${
+            : (link.style.animation = `navLinkFade 0.3s ease forwards ${
                 index / 7 + 0.3
             }s`);
         });
@@ -19,27 +19,27 @@ class CardEngenharia {
 
 
     handleClick() {
-        this.cardList.classList.toggle(this.activeClass);
-        this.cardEnge.classList.toggle(this.activeClass);
+        this.navList.classList.toggle(this.activeClass);
+        this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
     }
     addClickEvent(){
-        this.cardEnge.addEventListener("click", this.handleClick);
+        this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
     init(){
-        if (this.cardEnge){
+        if (this.mobileMenu){
             this.addClickEvent();
         }
         return this;
     }
 }
 
-const cardengenharia = new CardEngenharia(
-    ".card-enge",
-    ".card-main-enge",
-    ".enge-row",
+const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".menu-op",
+    ".menu-op-items",
 );
-cardengenharia.init();
+mobileNavbar.init();
 
 /**/

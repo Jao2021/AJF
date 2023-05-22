@@ -2,24 +2,68 @@
 
 .btn-wpp{
 	position: fixed;
-	left: 60%;
-	bottom: 25%;
+	left: 76%;
+	bottom: 3%;
 	
 }
 
     
- .banner{
-    background: center top / cover no-repeat #4f6745;
-    padding: 3vh 5vw;
-    
+.menu-op{
+    position: absolute;
+    top: 8vh;
+    right: 0vw;
+    width: 30vw;
+    height: 22vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease-in ;
 }
 
 .menu-op-items{
-	padding-left: 1em;
+	padding: 0;
 }
 
 .menu-op-items a{
-	font-size: 16px;
+	font-size: 19px;
+    font-weight: 500;
+}
+
+
+.menu-op.active{
+    display: flex;
+}
+
+.mobile-menu{
+    margin-right: 1.5vh;
+    display: block;
+}
+
+.mobile-menu div{
+    transition: .3s;
+}
+
+
+
+.mobile-menu.active .line1{
+	transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active  .line3{
+    transform: rotate(45deg) translate(-4px, -6px);
+}
+    
+
+
+.banner{
+    background: url(img/hero_mobile.webp) center top / cover no-repeat #4f6745;
+    padding: 3vh 5vw;
+    
 }
 
 .banner-textos h1{
@@ -36,6 +80,7 @@
 }
 
 .banner-textos a{
+    margin-top: 3vh;
     font-size: 5vw;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -46,7 +91,6 @@
     width: 90%;
     text-align: center;
 }
-    
     /*SERVICOS*/
 
 .servicos{
