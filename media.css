@@ -128,6 +128,46 @@
     font-size: 5vh;
           
 }
+
+.card_row{
+    display: none;
+}
+
+.card-item{
+    width: 90%;
+    margin-bottom: 3vh;
+}
+
+.card-mobile{
+    padding-top: 5vh;
+    display: grid;
+    justify-content: center;
+}
+
+
+.card {
+    width: 70vw;
+    height: 15.5vh;
+    margin-bottom: 3.5vh;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+               -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: hidden;
+  }
+  .card:hover {
+    height: 30vh;
+    background: linear-gradient(360deg, #d3d2d2c5 60%, hsla(0, 0%, 13%, 1) 70%);
+  }
+
+
+
+  .card .content p {
+    font-family: var(--fonte-principal);
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
     
     /*SOBRE*/
 

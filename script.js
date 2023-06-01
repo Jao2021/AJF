@@ -43,3 +43,16 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 /**/
+
+  document.getElementById("myDivE").addEventListener("click", function() {
+    document.getElementById("card-enge").checked = false;
+  });
+
+  document.getElementById("myDivI").addEventListener("click", function() {
+    document.getElementById("card-ins").checked = false;
+  });
+
+  document.getElementById("myDivM").addEventListener("click", function() {
+    document.getElementById("card-man").checked = false;
+  });
+
