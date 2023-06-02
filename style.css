@@ -630,10 +630,26 @@ card_row{
     width: 10%;
 }
 
+.rodape-icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rodape-icon img{
+    width: 5vh;
+    padding: 0vh 1vh;
+    height: 5vh;
+}
+
+.rodape-icon img:hover{
+    transition: .3s;
+    transform: translateY(-10%);
+}
 
 .menu-rodape-abas{
 	display: flex;
 	gap: 2vw;
+    padding-left: 2vw;
 }
 
 
