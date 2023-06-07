@@ -44,15 +44,51 @@ mobileNavbar.init();
 
 /**/
 
-  document.getElementById("myDivE").addEventListener("click", function() {
-    document.getElementById("card-enge").checked = false;
+
+  document.getElementById("myDivI12").addEventListener("click", function() {
+    document.getElementById("card-ins12").checked = false;
   });
 
-  document.getElementById("myDivI").addEventListener("click", function() {
-    document.getElementById("card-ins").checked = false;
+  document.getElementById("myDivI13").addEventListener("click", function() {
+    document.getElementById("card-ins13").checked = false;
+  });
+
+ document.getElementById("myDivE").addEventListener("click", function() {
+    document.getElementById("card-elaboracao").checked = false;
   });
 
   document.getElementById("myDivM").addEventListener("click", function() {
     document.getElementById("card-man").checked = false;
   });
 
+  document.getElementById("myDivC").addEventListener("click", function() {
+    document.getElementById("card-carga").checked = false;
+  });
+
+document.getElementById("myDivPMOC").addEventListener("click", function() {
+    document.getElementById("card-pmoc").checked = false;
+  });
+
+document.getElementById("myDivEST").addEventListener("click", function() {
+    document.getElementById("card-estanqueidade").checked = false;
+  });
+
+document.getElementById("myDivCam").addEventListener("click", function() {
+    document.getElementById("card-cam").checked = false;
+  });
+
+document.getElementById("myDivrin").addEventListener("click", function() {
+    document.getElementById("card-rin").checked = false;
+  });
+
+document.getElementById("myDivmet").addEventListener("click", function() {
+    document.getElementById("card-met").checked = false;
+  });
+  /**/
+  function activateRadioAndScroll(radioId, sectionId) {
+    var radio = document.getElementById(radioId);
+    radio.checked = true;
+
+    var section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}

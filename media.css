@@ -13,7 +13,7 @@
     top: 8vh;
     right: 0vw;
     width: 30vw;
-    height: 22vh;
+    height: 22vh; 
     display: none;
     flex-direction: column;
     align-items: center;
@@ -44,6 +44,9 @@
     transition: .3s;
 }
 
+    .logo{
+        width: 30%;
+    }
 
 
 .mobile-menu.active .line1{
@@ -67,8 +70,8 @@
 }
 
 .banner-textos h1{
-    font-weight: 600;
-	font-size: 5.5vw;
+    
+	font-size: 7vw;
             
 }
 .banner-textos{
@@ -99,15 +102,28 @@
     justify-content: space-between;
     padding: 0vh 3vh;
 }
+   
+    .projetos-h4{
+        width: 100%;
+    }
+    
+    .projetos h1{
+     font-size: 3.5vh;
+    }
 
 .card-pro{
-    padding: 5vh 0vh;
+    padding: 0vh 0vw 4vh 0vw;
     width: 100%;
     height: 30vh;
     text-align: center;
     margin-bottom: 3vh;
 }
 
+    .textClima, .textGases, .textGalpao, .textCombate h3{
+        font-size:2vh;
+        
+    }    
+    
 .proi #proi-img{
     display: block;
 }
@@ -115,6 +131,11 @@
 .card-in{
     display: none;
 }
+    
+    .textClima, .textGases, .textGalpao, .textCombate{
+        opacity: 1;
+        top: 10%;
+    }
 
 
  /*SOBRE*/
@@ -139,7 +160,7 @@
 
 .sobre_text p{
     font-family: 'Raleway', sans-serif;
-    font-size: 2.5vh;
+    font-size: 2vh;
     line-height: 1.1;
 }
 
@@ -163,6 +184,7 @@
     justify-content: center;
     gap: 4vw;;
     padding: 5vh 0vw;;
+    align-items: center;
 }
 
 .serv_card{
@@ -171,7 +193,23 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    width: 80vw;
+    align-items: center;
 }
+
+#card-enge:checked ~ .card-main-enge, 
+#card-ins12:checked ~ .card-main-ins12, 
+#card-ins13:checked ~ .card-main-ins13, 
+#card-man:checked ~ .card-main-man, 
+#card-elaboracao:checked ~ .card-main-elaboracao,
+#card-pmoc:checked ~ .card-main-pmoc,
+#card-carga:checked ~ .card-main-carga,
+#card-estanqueidade:checked ~ .card-main-estanqueidade{
+    padding: 5vh 2vw;
+
+    display: block;
+}
+
 
     .serv_card img {
         margin: auto;
@@ -179,7 +217,7 @@
     }
     
     .serv_card h4{
-    font-size: 30px;
+    font-size: 20px;
     
 }
     
@@ -187,9 +225,20 @@
     font-size: 5vh;
           
 }
+    
+.descricao {
+    width:100%;
+ }
 
-.card_row{
-    display: none;
+    .titulo{
+    font-size: 5.5vw;
+    margin: 2vh 0vh;  
+        font-weight: 600;
+    }
+    
+    .card_row{
+    display: flex;
+    flex-direction: column;
 }
 
 .card-item{
@@ -197,11 +246,6 @@
     margin-bottom: 3vh;
 }
 
-.card-mobile{
-    padding-top: 5vh;
-    display: grid;
-    justify-content: center;
-}
 
 
 .card {
@@ -221,12 +265,7 @@
 
 
 
-  .card .content p {
-    font-family: var(--fonte-principal);
-    transition: all .5s;
-    font-size: 1em;
-    margin-bottom: 8px;
-  }
+
 
     
     
